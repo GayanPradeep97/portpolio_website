@@ -1,0 +1,106 @@
+@import '../variable'
+
+// .ant-btn:hover
+//   transition: 0.8s
+//   border: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+  color: $white-color
+  background: $medium-color
+  border-radius: 5px
+  &__next
+    @include media_query_all_im(100,null,null,null,null,148,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+
+  //login button
+  &__login
+    background-color: $medium-color
+
+  //signUP,contact-us,submit, ok
+  &__high_orange
+    background-color: $medium-color
+
+  &__cancel
+    background: $button-dark-color
+    @include media_query_all_im(100,null,null,null,null,148,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+
+  &__goback
+    background-color: $white-color
+    border: 1px solid $medium-color
+    color: $medium-color
+    @include media_query_all_im(100,null,null,null,null,148,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+
+  &__update
+    background-color: $gray
+  &_create
+    @include media_query_all_im(100,null,null,null,null,336,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+
+    background: #0CA6DD !important
+  &_create2
+    @include media_query_all_im(100,null,null,null,null,336,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+  &_confirmation
+    @include media_query_all_im(100,null,null,null,null,148,'width')
+    @include media_query_all_im(40,null,null,null,null,50,'height')
+    @include media_query_all_im(14,null,null,null,null,16,'font-size')
+  &_addnewpromo
+    @include media_query_all(30,30,null,null,null,38,'height')
+    @include media_query_all(30,100,null,null,null,160,'width')
+    @include media_query_all(15,15,null,null,null,15,'font-size')
+    //font-size: 15px
+    font-weight: 400
+    display: flex
+    position: absolute
+    @include media_query_all(null,null,null,null,null,40,'right')
+    //right: 40px
+.ant-modal-close
+  color: #ffff
+
+/*----------toggle-------------*/
+
+/* Styles for the switch when it's toggled on (true) */
+::ng-deep .ant-switch
+  &.ant-switch-checked
+    background-color: #F45300
+    border-color: #F45300
+
+
+::ng-deep .ant-switch
+  background-image: none
+  background-color: #1890ff
+  border-color: #1890ff
+
+// <button nz-button class="btn btn__login">Login</button>
+// <button nz-button class="btn btn__high_orange">SignUp</button>
+// <button nz-button class="btn btn__cancel">Cancel</button>
+// <nz-switch [ngModel]="isToggled" (ngModelChange)="toggleSwitch($event)"></nz-switch>
+
+// isToggled = false;
+
+// toggleSwitch(event: boolean): void {
+//   this.isToggled = event;
+// }
+.switch
+  @include media_query_all_im(14,null,null,null,null,16,'font-size')
+  font-weight: 700
+  &__personal
+    color: $secondary-color
+  &__coporate
+    color: $primary-color
+.switch_row
+  display: flex
+  align-items: baseline
+  margin: 4px
+  gap: 10px

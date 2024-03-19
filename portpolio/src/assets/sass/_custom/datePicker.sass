@@ -1,0 +1,40 @@
+@import '../variable'
+
+// .date
+//   padding: 6px 5px 6px 10px
+//   border-radius: 5px
+//   color: $secondary-color
+//   font-size: 10.24px
+::ng-deep.ant-picker
+  width: 100% !important
+  @include media_query_all_im(null,null,null,null,null,50,'height')
+  padding: 6px
+  border-radius: 0
+  border: none
+  // border-bottom: 1px solid black
+
+:ng-deep.ant-picker-focused
+  border: none !important
+  box-shadow: none !important
+.ant-picker-input>.input-focused, .ant-picker-input>input:focus
+  border: none !important
+  border-color: #ffff !important
+  box-shadow: none
+.ant-picker-focused
+  box-shadow: none
+
+  // .ant-picker-suffix svg
+  //   fill: $primary-color
+
+// ::ng-deep .ant-picker-input input
+//   font-size: 10.24px $im
+
+// ::ng-deep .ant-picker-focused,
+// ::ng-deep .ant-picker:hover
+//   border: 1px solid $input-border-color
+//   box-shadow: none
+
+// .date.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector
+//   box-shadow: none
+.ant-picker-input>input
+  @include media_query_all_im(null,null,null,null,null,14,'font-size')
