@@ -38,12 +38,7 @@
               "src/theme.less",
               "src/styles.sass"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -110,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "0bb1ef8c-f94f-459b-9e64-404dd720c142"
+    "analytics": "f31494e5-b8bd-4bc2-b405-b7fffdd9e774"
   }
 }
