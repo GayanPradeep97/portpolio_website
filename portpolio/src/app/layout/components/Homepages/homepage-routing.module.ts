@@ -3,18 +3,29 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeRouterComponent } from './home-router/home-router.component';
+import { SkillsAndExperinceComponent } from './skills-and-experince/skills-and-experince.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ContactMeComponent,
+    component: HomeRouterComponent,
     children: [
       {
         path: '',
-        pathMatch: 'full',
-        redirectTo: '',
+        component: HomeComponent,
       },
     ],
+  },
+  {
+    path: 'about-me',
+    component: AboutMeComponent,
+  },
+  {
+    path: 'skills-and-experince',
+    component: SkillsAndExperinceComponent,
   },
 ];
 
