@@ -5,6 +5,12 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
 
 @NgModule({
   declarations: [],
@@ -16,6 +22,12 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     NzLayoutModule,
     NzGridModule,
     NzButtonModule,
+    NzCardModule,
+    NzImageModule,
+    NzPopoverModule,
+    NzCarouselModule,
+    NzModalModule,
+    NzNotificationModule,
   ],
 })
 export class SharedModule {}
