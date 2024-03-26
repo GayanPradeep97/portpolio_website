@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { HeaderComponent } from './layout/pages/dashboard/header/header.component';
 import { HomepageModule } from './layout/components/Homepages/homepage.module';
 import { HomepageComponent } from './layout/components/Homepages/homepage/homepage.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomepageComponent } from './layout/components/Homepages/homepage/homepa
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    BrowserAnimationsModule,
   ],
   bootstrap: [AppComponent],
 })

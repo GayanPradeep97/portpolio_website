@@ -1,14 +1,17 @@
 <div class="header">
   <div class="header-container">
-    <div class="left-side"></div>
+    <div class="left-side" [routerLink]="['']">
+      <span style="color: #fff">Gayan &nbsp;</span
+      ><span style="color: #eb7f13">Pradeep</span>
+    </div>
     <div class="ride-side">
       <div class="nav-menu-container">
         <ul class="nav-menu">
           <li [routerLink]="['']">Home</li>
           <li [routerLink]="['/about-me']">About Me</li>
           <li [routerLink]="['/skills-and-experince']">Skills and Experince</li>
-          <li>projects</li>
-          <li>Contact</li>
+          <li [routerLink]="['/projects']">projects</li>
+          <li [routerLink]="['/contact']">Contact</li>
         </ul>
       </div>
     </div>
