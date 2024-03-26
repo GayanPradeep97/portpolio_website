@@ -11,6 +11,8 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzNotificationModule } from 'ng-zorro-antd/notification';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
 
 @NgModule({
   declarations: [],
@@ -28,6 +30,8 @@ import { NzNotificationModule } from 'ng-zorro-antd/notification';
     NzCarouselModule,
     NzModalModule,
     NzNotificationModule,
+    NzTableModule,
+    NzWaterMarkModule,
   ],
 })
 export class SharedModule {}

@@ -9,6 +9,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeRouterComponent } from './home-router/home-router.component';
 import { SkillsAndExperinceComponent } from './skills-and-experince/skills-and-experince.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeRouterComponent,
     SkillsAndExperinceComponent,
     ProjectsComponent,
+    ProjectDetailsComponent,
+    ContactMeComponent,
   ],
   imports: [CommonModule, HomepageRoutingModule, SharedModule],
 })

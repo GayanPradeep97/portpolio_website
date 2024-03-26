@@ -1,6 +1,8 @@
 <div class="container">
   <div class="divider" nz-row [nzGutter]="8">
-    <div nz-col [nzSpan]="8"><span>Projects</span></div>
+    <div nz-col [nzSpan]="8" class="with_background">
+      <span class="projects">Projects &nbsp;</span>
+    </div>
     <div nz-col [nzSpan]="8">
       <div>
         <div>
@@ -11,7 +13,7 @@
                 [style]="{ background: backgroundImageUrls[i] }"
               >
                 <h3>{{ item }}</h3>
-                <button nz-button (click)="createBasicNotification()">
+                <button nz-button (click)="createBasicNotification(i)">
                   See More
                 </button>
               </div>

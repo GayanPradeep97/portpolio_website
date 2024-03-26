@@ -28,10 +28,13 @@ const routes: Routes = [
     path: 'skills-and-experince',
     component: SkillsAndExperinceComponent,
   },
-
   {
     path: 'projects',
     component: ProjectsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactMeComponent,
   },
 ];
 
