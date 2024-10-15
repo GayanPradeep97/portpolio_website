@@ -13,6 +13,7 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzNotificationModule } from 'ng-zorro-antd/notification';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 @NgModule({
   declarations: [],
@@ -32,6 +33,7 @@ import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
     NzNotificationModule,
     NzTableModule,
     NzWaterMarkModule,
+    NzSpinModule,
   ],
 })
 export class SharedModule {}

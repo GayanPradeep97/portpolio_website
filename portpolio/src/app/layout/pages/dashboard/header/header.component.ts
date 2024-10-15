@@ -6,4 +6,8 @@ import { SharedModule } from '../../../../shared/shared.module';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

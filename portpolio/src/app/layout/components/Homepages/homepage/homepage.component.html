@@ -1,6 +1,9 @@
 <nz-layout>
   <app-header></app-header>
-  <nz-content><router-outlet></router-outlet></nz-content>
+  <nz-content>
+    <nz-spin nzTip="Loading..."> </nz-spin>
+    <router-outlet></router-outlet><app-loading></app-loading
+  ></nz-content>
   <nz-footer>
     <div class="footer">
       <div class=""><span>Portfolio Web. Powered by Angular</span></div>

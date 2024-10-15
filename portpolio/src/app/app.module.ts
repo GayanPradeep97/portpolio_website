@@ -10,6 +10,9 @@ import { HeaderComponent } from './layout/pages/dashboard/header/header.componen
 import { HomepageModule } from './layout/components/Homepages/homepage.module';
 import { HomepageComponent } from './layout/components/Homepages/homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadingComponent } from './layout/common-component/loading/loading.component';
+import { JwtInterceptor } from './helpers/jwtinterceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DashboardComponent,
     HeaderComponent,
     HomepageComponent,
+    LoadingComponent,
   ],
+  bootstrap: [AppComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -26,6 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SharedModule,
     BrowserAnimationsModule,
   ],
-  bootstrap: [AppComponent],
+
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+  ],
 })
 export class AppModule {}
