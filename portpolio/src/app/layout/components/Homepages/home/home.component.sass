@@ -1,0 +1,106 @@
+@import './../../../../../assets/sass/index'
+
+
+
+.main-container 
+    background: #2d3b5e
+    height: auto
+    min-width: max-content
+    // min-width:100vw
+    // height:1020px
+    // border-bottom-left-radius: 50% 30px
+    // border-bottom-right-radius: 50% 20px
+    // border-bottom: 2px solid #ccc 
+    overflow: hidden
+   
+   
+
+.container 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: start
+    background: #2d3b5e
+    height: 100%   
+    padding: 100px 30px 30px 30px
+
+.text
+    margin-right: 100px
+.right-side
+    display: flex
+    flex-direction: row
+    align-items: start
+    gap: 40px
+
+.img-row    
+    display: flex
+    flex-direction: column
+    gap: 30px
+    margin-top: 40px
+    animation: loadAnimation 1s ease forwards .6s
+
+img
+    height: 36px   
+
+.img_1  
+    height: 190px  
+.img_2
+    height: 60px 
+    position: relative
+    left: 50px
+    bottom: 120px
+.img_3
+    height: 60px 
+    position: relative
+    right: 50px
+    top: 120px
+
+.title
+    font-size: 48px     
+    color: #fff
+    animation: loadAnimation 1s ease forwards .6s
+
+
+.animationText
+    color: #eb7f13
+    animation: loadAnimation 1s ease forwards .6s
+
+.sub 
+    margin-top: 30px  
+.sub_title
+    font-size: 24px     
+    color: #fff
+    animation: loadAnimation 1s ease forwards .6s
+
+.left-side
+
+.gayanImg
+    height: 400px
+    width: 390px
+
+.btn-section
+    margin-top: 30px 
+
+.ant-btn
+    background: transparent
+    border: 1px solid #eb7f13
+    border-radius: 10px
+    color: #fff
+    height: 40px
+    width: 150px
+    padding-top: 10px
+    animation: loadAnimation 1s ease forwards .6s
+    // padding: 20px
+    &:hover
+        background: #eb7f13
+        color: #fff
+        border-color: #eb7f13
+
+
+@keyframes loadAnimation
+    0%
+        opacity: 0
+        
+    100%
+        opacity: 1
+            

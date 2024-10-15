@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="divider" nz-row [nzGutter]="8">
+    <div nz-col [nzSpan]="8" class="with_background">
+      <span class="projects">Projects &nbsp;</span>
+    </div>
+    <div nz-col [nzSpan]="8">
+      <div>
+        <div>
+          <nz-carousel nzAutoPlay>
+            <ng-container *ngFor="let item of array; let i = index">
+              <div
+                nz-carousel-content
+                [style]="{ background: backgroundImageUrls[i] }"
+              >
+                <h3>{{ item }}</h3>
+                <button nz-button (click)="createBasicNotification(i)">
+                  See More
+                </button>
+              </div>
+            </ng-container>
+          </nz-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
